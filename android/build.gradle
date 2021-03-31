@@ -68,6 +68,16 @@ repositories {
     )
   }
 
+  maven {
+    url 'https://jitpack.io'
+    content {
+        // Use this repo only for olm library
+        includeGroupByRegex "org\\.matrix\\.gitlab\\.matrix-org"
+        // And monarchy
+        includeGroupByRegex "com\\.github\\.Zhuinden"
+    }
+  }
+
   if (defaultDir.exists()) {
     maven {
       url defaultDir.toString()
@@ -127,4 +137,7 @@ dependencies {
   // noinspection GradleDynamicVersion
   api 'com.facebook.react:react-native:+'
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+  // olm lib is now hosted by jitpack: https://jitpack.io/#org.matrix.gitlab.matrix-org/olm
+  implementation 'org.matrix.gitlab.matrix-org:olm:3.2.2'
 }

@@ -1,7 +1,7 @@
 {
   "name": "react-native-olm",
-  "version": "0.1.0",
-  "description": "Olm for react native",
+  "version": "0.1.2",
+  "description": "Olm bridge for react native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/index.d.ts",
@@ -34,15 +34,17 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "olm",
+    "matrix"
   ],
-  "repository": "https://github.com/manishoo/react-native-olm",
+  "repository": "https://gitlab.com/manishoo/react-native-olm",
   "author": "Manishoo <maanishooshtari@gmail.com> (https://github.com/manishoo)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/manishoo/react-native-olm/issues"
+    "url": "https://gitlab.com/manishoo/react-native-olm/issues"
   },
-  "homepage": "https://github.com/manishoo/react-native-olm#readme",
+  "homepage": "https://gitlab.com/manishoo/react-native-olm#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
