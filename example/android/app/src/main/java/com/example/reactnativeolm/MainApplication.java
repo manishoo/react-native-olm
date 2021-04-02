@@ -10,16 +10,7 @@ import com.facebook.react.ReactInstanceManager;
 import com.facebook.soloader.SoLoader;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
-import com.reactnativeolm.OlmSASPackage;
-import com.reactnativeolm.OlmSessionPackage;
-import com.reactnativeolm.OlmUtilityPackage;
-import com.reactnativeolm.OlmPkSigningPackage;
-import com.reactnativeolm.OlmPkEncryptionPackage;
-import com.reactnativeolm.OlmPkDecryptionPackage;
-import com.reactnativeolm.OlmOutboundGroupSessionPackage;
-import com.reactnativeolm.OlmManagerPackage;
-import com.reactnativeolm.OlmInboundGroupSessionPackage;
-import com.reactnativeolm.OlmAccountPackage;
+import com.reactnativeolm.ReactNativeOlmPackage;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -36,16 +27,7 @@ public class MainApplication extends Application implements ReactApplication {
           List<ReactPackage> packages = new PackageList(this).getPackages();
           // Packages that cannot be autolinked yet can be added manually here, for OlmExample:
           // packages.add(new MyReactNativePackage());
-          packages.add(new OlmSASPackage());
-          packages.add(new OlmSessionPackage());
-          packages.add(new OlmUtilityPackage());
-          packages.add(new OlmPkSigningPackage());
-          packages.add(new OlmPkEncryptionPackage());
-          packages.add(new OlmPkDecryptionPackage());
-          packages.add(new OlmOutboundGroupSessionPackage());
-          packages.add(new OlmManagerPackage());
-          packages.add(new OlmInboundGroupSessionPackage());
-          packages.add(new OlmAccountPackage());
+          packages.add(new ReactNativeOlmPackage());
           return packages;
         }
 
