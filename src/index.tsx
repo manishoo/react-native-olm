@@ -5,7 +5,7 @@ let { ReactNativeOlm } = NativeModules;
 ReactNativeOlm.init();
 
 const log = (..._args: any[]) => {
-  console.log(..._args);
+  // console.log(..._args);
 };
 
 const Olm = {
